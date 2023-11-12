@@ -17,6 +17,18 @@ function App() {
     <ThemeProvider theme={theme}>
       <Main />
       <Services />
+      <div>
+        <a href="https://iconscout.com/icons/dotnet" target="_blank" rel="noopener noreferrer">
+          Dotnet
+        </a>
+        by
+        <a
+          href="https://iconscout.com/contributors/icon-mafia"
+          target="_blank"
+          rel="noopener noreferrer">
+          Icon Mafia
+        </a>
+      </div>
     </ThemeProvider>
   );
 }

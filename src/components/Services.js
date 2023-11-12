@@ -1,15 +1,42 @@
 import { Grid } from "@mui/material";
 import CardService from "./CardService";
 import DeveloperBoardIcon from "@mui/icons-material/DeveloperBoard";
+import LanguageIcon from "@mui/icons-material/Language";
+import logo from "../logo.svg";
+import dotnetlogo from "../dotnet.svg";
+import ApiIcon from "@mui/icons-material/Api";
 
 const servicesdata = [
   {
-    icon: <DeveloperBoardIcon fontSize="large" style={{ margin: "auto", paddingLeft: "15px" }} />,
-    header: "Software Development",
-    discription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nose irure dolor",
+    icon: <DeveloperBoardIcon fontSize="large" style={{ margin: "auto" }} />,
+    img: false,
+    header: "Software Engineer",
+    discription: "This  ",
   },
-  { icon: "icon", header: "Software Developmen", discription: "discrieption" },
+  {
+    icon: logo,
+    img: true,
+    header: "React Developer",
+    discription: "discrieption",
+  },
+  {
+    icon: <LanguageIcon fontSize="large" style={{ margin: "auto" }} />,
+    img: false,
+    header: "Web developer",
+    discription: "discrieption",
+  },
+  {
+    icon: <ApiIcon fontSize="large" style={{ margin: "auto" }} />,
+    img: false,
+    header: "Web API Development",
+    discription: "discrieption ",
+  },
+  {
+    icon: dotnetlogo,
+    img: true,
+    header: "DotNet Web API Development",
+    discription: "discrieption",
+  },
 ];
 
 const Services = () => {
@@ -18,12 +45,12 @@ const Services = () => {
       <Grid container spacing={3} style={{ margin: "auto" }}>
         {servicesdata.map((service, index) => {
           return (
-            <Grid item>
+            <Grid item key={index}>
               <CardService
                 icon={service.icon}
                 header={service.header}
                 discription={service.discription}
-                key={index}
+                imageType={service.img}
               />
             </Grid>
           );
