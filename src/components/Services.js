@@ -22,7 +22,7 @@ const servicesdata = [
   {
     icon: <LanguageIcon fontSize="large" style={{ margin: "auto" }} />,
     img: false,
-    header: "Web developer",
+    header: "Web Developer",
     discription: "discrieption",
   },
   {
