@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import CardService from "./CardService";
 import DeveloperBoardIcon from "@mui/icons-material/DeveloperBoard";
 import LanguageIcon from "@mui/icons-material/Language";
@@ -42,6 +42,17 @@ const servicesdata = [
 const Services = () => {
   return (
     <div id="services" style={{ marginTop: "20px" }}>
+      <Typography
+        variant="h5"
+        textAlign={"left"}
+        sx={{
+          textDecoration: "overline",
+          paddingBottom: "10px",
+          paddingTop: "20px",
+          marginLeft: "20px",
+        }}>
+        Services
+      </Typography>
       <Grid container spacing={3} style={{ margin: "auto" }}>
         {servicesdata.map((service, index) => {
           return (
