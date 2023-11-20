@@ -89,11 +89,11 @@ const NavBar = () => {
                   Services
                 </Link>
               </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
+              {/*<MenuItem onClick={handleCloseNavMenu}>
                 <Link href="#projects" color="inherit" underline="none" rel="noopener">
                   Projects
                 </Link>
-              </MenuItem>
+            </MenuItem>*/}
               <MenuItem onClick={handleCloseNavMenu}>
                 <Link href="#contactme" color="inherit" underline="none" rel="noopener">
                   Contact
@@ -144,11 +144,11 @@ const NavBar = () => {
                 Services
               </Link>
             </Button>
-            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
+            {/*<Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
               <Link href="#projects" color="inherit" underline="none" rel="noopener">
                 Projects
               </Link>
-            </Button>
+          </Button>*/}
             <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
               <Link href="#contactme" color="inherit" underline="none" rel="noopener">
                 Contact
