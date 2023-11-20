@@ -96,7 +96,7 @@ const NavBar = () => {
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
                 <Link href="#contactme" color="inherit" underline="none" rel="noopener">
-                  ContactMe
+                  Contact
                 </Link>
               </MenuItem>
             </Menu>

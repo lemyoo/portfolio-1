@@ -1,4 +1,4 @@
-import { Grid, Link } from "@mui/material";
+import { Grid, Link, Typography } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";
@@ -7,7 +7,18 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 
 const ContactMe = () => {
   return (
-    <div id="contactme">
+    <div id="contactme" style={{ marginTop: "20px" }}>
+      <Typography
+        variant="h5"
+        textAlign={"left"}
+        sx={{
+          textDecoration: "overline",
+          paddingBottom: "10px",
+          paddingTop: "20px",
+          marginLeft: "20px",
+        }}>
+        Get In Touch
+      </Typography>
       <Grid container>
         <Grid item xs={12} sx={{ textAlign: "center" }} spacing={10}>
           <Link
