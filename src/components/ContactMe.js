@@ -1,4 +1,4 @@
-import { Grid, Link, Typography } from "@mui/material";
+import { Grid, Link, Typography, TextField } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";
@@ -20,7 +20,31 @@ const ContactMe = () => {
         Get In Touch
       </Typography>
       <Grid container>
-        <Grid item xs={12} sx={{ textAlign: "center" }} spacing={10}>
+        <Grid item md={1} xs={1} sx={{ backgroundColor: "red" }}></Grid>
+        <Grid item md={3} xs={10}>
+          <TextField id="outlined-basic" label="Your Name" variant="outlined" fullWidth />
+        </Grid>
+        <Grid item md={0} xs={1} sx={{ backgroundColor: "red" }}></Grid>
+        <Grid item md={3} xs={10}>
+          <TextField id="filled-basic" label="Your Number" variant="outlined" fullWidth />
+        </Grid>
+        <Grid item md={0} xs={1} sx={{ backgroundColor: "red" }}></Grid>
+        <Grid item md={3} xs={10}>
+          <TextField id="standard-basic" label="Your Email" variant="outlined" fullWidth />
+        </Grid>
+        <Grid item md={1} xs={1} sx={{ backgroundColor: "red" }}></Grid>
+        {/*<Grid item xs={8}>
+          <TextField
+            id="standard-basic"
+            label="Your Message"
+            variant="outlined"
+            multiline
+            rows={5}
+            fullWidth
+          />
+</Grid>*/}
+
+        <Grid item xs={12} sx={{ textAlign: "center" }}>
           <Link
             href="https://github.com/lemyoo/"
             color="inherit"

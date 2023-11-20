@@ -58,10 +58,10 @@ const Services = () => {
         }}>
         Services
       </Typography>
-      <Grid container spacing={3} style={{ margin: "auto" }}>
+      <Grid container style={{ margin: "auto" }}>
         {servicesdata.map((service, index) => {
           return (
-            <Grid item key={index}>
+            <Grid item key={index} sx={{ marginLeft: "10px" }}>
               <CardService
                 icon={service.icon}
                 header={service.header}
