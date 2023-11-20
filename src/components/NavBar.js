@@ -1,7 +1,5 @@
 import React from "react";
-//import GitHubIcon from "@mui/icons-material/GitHub";
 import Link from "@mui/material/Link";
-//import { styled } from "@mui/material/styles";
 import {
   AppBar,
   Box,
@@ -91,6 +89,16 @@ const NavBar = () => {
                   Services
                 </Link>
               </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Link href="#projects" color="inherit" underline="none" rel="noopener">
+                  Projects
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Link href="#contactme" color="inherit" underline="none" rel="noopener">
+                  ContactMe
+                </Link>
+              </MenuItem>
             </Menu>
 
             {/*<Link
@@ -134,6 +142,16 @@ const NavBar = () => {
             <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
               <Link href="#services" color="inherit" underline="none" rel="noopener">
                 Services
+              </Link>
+            </Button>
+            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
+              <Link href="#projects" color="inherit" underline="none" rel="noopener">
+                Projects
+              </Link>
+            </Button>
+            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
+              <Link href="#contactme" color="inherit" underline="none" rel="noopener">
+                Contact
               </Link>
             </Button>
           </Box>
