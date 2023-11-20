@@ -12,7 +12,7 @@ const theme = createTheme({
   },
   typography: {},
 });
-function App() {
+const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Main />
@@ -31,6 +31,6 @@ function App() {
       </div>
     </ThemeProvider>
   );
-}
+};
 
 export default App;
