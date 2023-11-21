@@ -1,4 +1,4 @@
-import { Grid, Link, Typography, TextField } from "@mui/material";
+import { Grid, Link, Typography, TextField, Button, Stack } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";
@@ -20,20 +20,20 @@ const ContactMe = () => {
         Get In Touch
       </Typography>
       <Grid container>
-        <Grid item md={1} xs={1} sx={{ backgroundColor: "red" }}></Grid>
-        <Grid item md={3} xs={10}>
+        {/*<Grid item md={1} xs={1} sx={{ backgroundColor: "red" }}></Grid>*/}
+        <Grid item md={3} xs={10} sx={{ margin: "auto", paddingBottom: "10px" }}>
           <TextField id="outlined-basic" label="Your Name" variant="outlined" fullWidth />
         </Grid>
-        <Grid item md={0} xs={1} sx={{ backgroundColor: "red" }}></Grid>
-        <Grid item md={3} xs={10}>
+        {/*<Grid item md={0} xs={1} sx={{ backgroundColor: "red" }}></Grid>*/}
+        <Grid item md={3} xs={10} sx={{ margin: "auto", paddingBottom: "10px" }}>
           <TextField id="filled-basic" label="Your Number" variant="outlined" fullWidth />
         </Grid>
-        <Grid item md={0} xs={1} sx={{ backgroundColor: "red" }}></Grid>
-        <Grid item md={3} xs={10}>
+        {/*<Grid item md={0} xs={1} sx={{ backgroundColor: "red" }}></Grid>*/}
+        <Grid item md={3} xs={10} sx={{ margin: "auto", paddingBottom: "10px" }}>
           <TextField id="standard-basic" label="Your Email" variant="outlined" fullWidth />
         </Grid>
-        <Grid item md={1} xs={1} sx={{ backgroundColor: "red" }}></Grid>
-        {/*<Grid item xs={8}>
+        {/*<Grid item md={1} xs={1} sx={{ backgroundColor: "red" }}></Grid>*/}
+        <Grid item xs={10} sx={{ margin: "auto" }}>
           <TextField
             id="standard-basic"
             label="Your Message"
@@ -42,9 +42,16 @@ const ContactMe = () => {
             rows={5}
             fullWidth
           />
-</Grid>*/}
+        </Grid>
+        <Grid item xs={12} sx={{ marginTop: 2 }}>
+          <Stack>
+            <Button variant="contained" style={{ margin: "auto" }}>
+              Send
+            </Button>
+          </Stack>
+        </Grid>
 
-        <Grid item xs={12} sx={{ textAlign: "center" }}>
+        <Grid item xs={12} sx={{ textAlign: "center", marginTop: 5 }}>
           <Link
             href="https://github.com/lemyoo/"
             color="inherit"
