@@ -10,7 +10,7 @@ const StyledPaper = styled(Paper)`
 
 const CardService = ({ icon, header, discription, imageType }) => {
   return (
-    <StyledPaper sx={{ height: "300px", width: "230px", padding: 3 }}>
+    <StyledPaper sx={{ height: "280px", width: "250px", padding: 3 }}>
       <div style={{ display: "flex", gap: "10px" }}>
         {imageType ? <img src={icon} width={60} alt="logo" /> : icon}
         <Typography fontWeight={"bold"} fontSize={20}>
