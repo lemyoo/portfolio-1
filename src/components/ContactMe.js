@@ -20,19 +20,18 @@ const ContactMe = () => {
         Get In Touch
       </Typography>
       <Grid container>
-        {/*<Grid item md={1} xs={1} sx={{ backgroundColor: "red" }}></Grid>*/}
         <Grid item md={3} xs={10} sx={{ margin: "auto", paddingBottom: "10px" }}>
           <TextField id="outlined-basic" label="Your Name" variant="outlined" fullWidth />
         </Grid>
-        {/*<Grid item md={0} xs={1} sx={{ backgroundColor: "red" }}></Grid>*/}
+
         <Grid item md={3} xs={10} sx={{ margin: "auto", paddingBottom: "10px" }}>
           <TextField id="filled-basic" label="Your Number" variant="outlined" fullWidth />
         </Grid>
-        {/*<Grid item md={0} xs={1} sx={{ backgroundColor: "red" }}></Grid>*/}
+
         <Grid item md={3} xs={10} sx={{ margin: "auto", paddingBottom: "10px" }}>
           <TextField id="standard-basic" label="Your Email" variant="outlined" fullWidth />
         </Grid>
-        {/*<Grid item md={1} xs={1} sx={{ backgroundColor: "red" }}></Grid>*/}
+
         <Grid item xs={10} sx={{ margin: "auto" }}>
           <TextField
             id="standard-basic"

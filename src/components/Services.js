@@ -61,7 +61,7 @@ const Services = () => {
       <Grid container style={{ margin: "auto" }}>
         {servicesdata.map((service, index) => {
           return (
-            <Grid item key={index} sx={{ marginLeft: "10px" }}>
+            <Grid item key={index} sx={{ margin: "auto", paddingBottom: 2 }}>
               <CardService
                 icon={service.icon}
                 header={service.header}
