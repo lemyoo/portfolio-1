@@ -11,12 +11,12 @@ const AboutMe = () => {
         About Me
       </Typography>
       <Typography textAlign={"left"}>
-        Greetings, and thank you for visiting my website. I am proudly hailing from the vibrant
-        nation of Ghana. My journey into the world of technology began at the esteemed University of
-        Ghana, where I pursued a degree in Computer Engineering. During my time at the University of
-        Ghana, I honed my skills and knowledge in both software and hardware aspects of computing.
-        The rigorous curriculum, coupled with hands-on projects, laid the foundation for my passion
-        and proficiency in software engineering.
+        Greetings, and thank you for visiting my website. I proudly hail from the vibrant nation of
+        Ghana. My journey into the world of technology began at the esteemed University of Ghana,
+        where I pursued a degree in Computer Engineering. During my time at the University of Ghana,
+        I honed my skills and knowledge in both software and hardware aspects of computing. The
+        rigorous curriculum, coupled with hands-on projects, laid the foundation for my passion and
+        proficiency in software engineering.
       </Typography>
       <br />
       <Typography textAlign={"left"}>
@@ -27,7 +27,7 @@ const AboutMe = () => {
       </Typography>
       <br />
       <Typography textAlign={"left"}>
-        Join me as I navigate the ever-evolving landscape of software engineering, leveraging my
+        Join me as I navigate the ever-evolving landscape of software engineering, leveraging on my
         education, experience, and enthusiasm to contribute meaningfully to the world of technology.
       </Typography>
 
