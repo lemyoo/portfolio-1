@@ -99,6 +99,7 @@ const ContactMe = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.user_number}
+                  type="tel"
                 />
               </Grid>
               <Grid item md={12} sm={0} xs={0}></Grid>
@@ -124,7 +125,7 @@ const ContactMe = () => {
                   name="user_subject"
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  value={values.user_subject}
+                  value={values.user_subject.toUpperCase()}
                 />
               </Grid>
 
