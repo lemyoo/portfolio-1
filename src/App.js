@@ -4,6 +4,7 @@ import Services from "./components/Services";
 //import Projects from "./components/Projects";
 import ContactMe from "./components/ContactMe";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { SnackbarProvider } from "notistack";
 
 const theme = createTheme({
   palette: {
@@ -16,24 +17,26 @@ const theme = createTheme({
 });
 const App = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <Main />
-      <Services />
-      {/*<Projects />*/}
-      <ContactMe />
-      <div>
-        <a href="https://iconscout.com/icons/dotnet" target="_blank" rel="noopener noreferrer">
-          Dotnet
-        </a>
-        by
-        <a
-          href="https://iconscout.com/contributors/icon-mafia"
-          target="_blank"
-          rel="noopener noreferrer">
-          Icon Mafia
-        </a>
-      </div>
-    </ThemeProvider>
+    <SnackbarProvider>
+      <ThemeProvider theme={theme}>
+        <Main />
+        <Services />
+        {/*<Projects />*/}
+        <ContactMe />
+        <div>
+          <a href="https://iconscout.com/icons/dotnet" target="_blank" rel="noopener noreferrer">
+            Dotnet
+          </a>
+          by
+          <a
+            href="https://iconscout.com/contributors/icon-mafia"
+            target="_blank"
+            rel="noopener noreferrer">
+            Icon Mafia
+          </a>
+        </div>
+      </ThemeProvider>
+    </SnackbarProvider>
   );
 };
 

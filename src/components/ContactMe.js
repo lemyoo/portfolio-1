@@ -7,6 +7,7 @@ import MailIcon from "@mui/icons-material/Mail";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { Formik } from "formik";
+import { enqueueSnackbar } from "notistack";
 
 const ContactMe = () => {
   const form = useRef();
@@ -54,7 +55,7 @@ const ContactMe = () => {
           }
           return errors;
         }}
-        onSubmit={(values, { setSubmitting }) => {
+        onSubmit={(values, { setSubmitting, resetForm }) => {
           console.log(values);
 
           emailjs
@@ -62,7 +63,9 @@ const ContactMe = () => {
             .then(
               (result) => {
                 console.log(result.text);
+                enqueueSnackbar("message sent");
                 setSubmitting(false);
+                resetForm({ values: "" });
               },
               (error) => {
                 console.log(error.text);
@@ -89,7 +92,7 @@ const ContactMe = () => {
 
               <Grid item sm={4} xs={10} style={{ margin: "auto", paddingBottom: "10px" }}>
                 <TextField
-                  label="Your Number"
+                  label="Your Mobile Number"
                   variant="outlined"
                   fullWidth
                   required
@@ -98,7 +101,7 @@ const ContactMe = () => {
                   onBlur={handleBlur}
                   value={values.user_number}
                 />
-                {/*errors.number && touched.user_number*/}
+                {errors.user_number && touched.user_number}
               </Grid>
               <Grid item md={12} sm={0} xs={0}></Grid>
               <Grid item md={4} sm={8} xs={10} style={{ margin: "auto", paddingBottom: "10px" }}>
