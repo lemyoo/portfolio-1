@@ -89,12 +89,11 @@ const NavBar = () => {
                   Services
                 </Link>
               </MenuItem>
-
-              {/*<MenuItem onClick={handleCloseNavMenu}>
+              <MenuItem onClick={handleCloseNavMenu}>
                 <Link href="#projects" color="inherit" underline="none" rel="noopener">
                   Projects
                 </Link>
-            </MenuItem>*/}
+              </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
                 <Link href="#contactme" color="inherit" underline="none" rel="noopener">
                   Contact
@@ -111,21 +110,6 @@ const NavBar = () => {
                 </Link>
               </MenuItem>
             </Menu>
-
-            {/*<Link
-              href="https://github.com/lemyoo/"
-              color="inherit"
-              underline="none"
-              target="_blank"
-              rel="noopener">
-              <GitHubIcon />
-            </Link>
-            <Link href="#" color="inherit" underline="none" rel="noopener">
-              Home
-            </Link>
-            <Link href="#services" color="inherit" underline="none" rel="noopener">
-              Services
-            </Link>*/}
           </Box>
           <Typography
             variant="h5"
@@ -155,11 +139,11 @@ const NavBar = () => {
                 Services
               </Link>
             </Button>
-            {/*<Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
+            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
               <Link href="#projects" color="inherit" underline="none" rel="noopener">
                 Projects
               </Link>
-          </Button>*/}
+            </Button>
             <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
               <Link href="#contactme" color="inherit" underline="none" rel="noopener">
                 Contact
