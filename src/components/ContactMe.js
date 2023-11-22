@@ -87,7 +87,6 @@ const ContactMe = () => {
                   name="user_name"
                   value={values.user_name}
                 />
-                {errors.user_name && touched.user_name}
               </Grid>
 
               <Grid item sm={4} xs={10} style={{ margin: "auto", paddingBottom: "10px" }}>
@@ -101,7 +100,6 @@ const ContactMe = () => {
                   onBlur={handleBlur}
                   value={values.user_number}
                 />
-                {errors.user_number && touched.user_number}
               </Grid>
               <Grid item md={12} sm={0} xs={0}></Grid>
               <Grid item md={4} sm={8} xs={10} style={{ margin: "auto", paddingBottom: "10px" }}>
@@ -114,8 +112,8 @@ const ContactMe = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.user_email}
+                  type="email"
                 />
-                {errors.email /*&& touched.email && errors.email*/}
               </Grid>
               <Grid item md={4} sm={8} xs={10} style={{ margin: "auto", paddingBottom: "10px" }}>
                 <TextField
@@ -128,7 +126,6 @@ const ContactMe = () => {
                   onBlur={handleBlur}
                   value={values.user_subject}
                 />
-                {/*errors.subject && touched.email && errors.email*/}
               </Grid>
 
               <Grid item xs={10} sx={{ margin: "auto" }}>
