@@ -89,6 +89,7 @@ const NavBar = () => {
                   Services
                 </Link>
               </MenuItem>
+
               {/*<MenuItem onClick={handleCloseNavMenu}>
                 <Link href="#projects" color="inherit" underline="none" rel="noopener">
                   Projects
@@ -97,6 +98,16 @@ const NavBar = () => {
               <MenuItem onClick={handleCloseNavMenu}>
                 <Link href="#contactme" color="inherit" underline="none" rel="noopener">
                   Contact
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Link
+                  href="https://lemyoo.github.io/resume/"
+                  color="white"
+                  underline="none"
+                  rel="noopener"
+                  style={{ backgroundColor: "green", padding: 2, borderRadius: 5 }}>
+                  Resume / CV
                 </Link>
               </MenuItem>
             </Menu>
@@ -152,6 +163,17 @@ const NavBar = () => {
             <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
               <Link href="#contactme" color="inherit" underline="none" rel="noopener">
                 Contact
+              </Link>
+            </Button>
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block", backgroundColor: "green" }}>
+              <Link
+                href="https://lemyoo.github.io/resume/"
+                color="inherit"
+                underline="none"
+                rel="noopener">
+                Resume / CV
               </Link>
             </Button>
           </Box>
