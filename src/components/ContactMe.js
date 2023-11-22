@@ -67,7 +67,7 @@ const ContactMe = () => {
         onSubmit={(values, { setSubmitting }) => {}}>
         <form ref={form} onSubmit={sendEmail}>
           <Grid container>
-            <Grid item md={4} sm={8} xs={10} sx={{ margin: "auto", paddingBottom: "10px" }}>
+            <Grid item md={4} sm={8} xs={10} style={{ margin: "auto", paddingBottom: "10px" }}>
               <TextField
                 id="outlined-basic"
                 label="Your Name"
@@ -78,7 +78,7 @@ const ContactMe = () => {
               />
             </Grid>
 
-            <Grid item sm={4} xs={10} sx={{ margin: "auto", paddingBottom: "10px" }}>
+            <Grid item sm={4} xs={10} style={{ margin: "auto", paddingBottom: "10px" }}>
               <TextField
                 id="filled-basic"
                 label="Your Number"
@@ -89,7 +89,7 @@ const ContactMe = () => {
               />
             </Grid>
             <Grid item md={12} sm={0} xs={0}></Grid>
-            <Grid item md={4} sm={8} xs={10} sx={{ margin: "auto", paddingBottom: "10px" }}>
+            <Grid item md={4} sm={8} xs={10} style={{ margin: "auto", paddingBottom: "10px" }}>
               <TextField
                 id="standard-basic"
                 label="Your Email"
@@ -99,7 +99,7 @@ const ContactMe = () => {
                 name="user_email"
               />
             </Grid>
-            <Grid item md={4} sm={8} xs={10} sx={{ margin: "auto", paddingBottom: "10px" }}>
+            <Grid item md={4} sm={8} xs={10} style={{ margin: "auto", paddingBottom: "10px" }}>
               <TextField
                 id="standard-basic"
                 label="Subject"
