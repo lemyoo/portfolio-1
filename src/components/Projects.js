@@ -3,6 +3,8 @@ import { styled } from "@mui/material/styles";
 import Project from "./Project";
 import DashboardImage from "../projectsImages/DashBoard.PNG";
 import MovieRanking from "../projectsImages/MovieRanking.PNG";
+import BirthdayInvite from "../projectsImages/BirthdayInvite.PNG";
+import PasswordValidtor from "../projectsImages/PasswordValidator.PNG";
 
 const Div = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.primary.main,
@@ -18,11 +20,25 @@ const projects = [
     url: "https://lemyodashboard.netlify.app/",
   },
   {
+    name: "Password Validator",
+    image: PasswordValidtor,
+    alt: "passwordvalidator",
+    source: "https://github.com/lemyoo/password_validator",
+    url: "https://passwordvalidator.netlify.app/",
+  },
+  {
     name: "Movie Ranking",
     image: MovieRanking,
     alt: "movieranking",
-    source: "https://github.com/lemyoo/Dashboard",
-    url: "https://lemyodashboard.netlify.app/",
+    source: "https://github.com/lemyoo/movieranking",
+    url: "https://lemyoo.github.io/movieranking/",
+  },
+  {
+    name: "Birthday Invite",
+    image: BirthdayInvite,
+    alt: "birthdayinvite",
+    source: "https://github.com/lemyoo/birthdayinvite",
+    url: "https://lemyoo.github.io/birthdayinvite/",
   },
 ];
 const Projects = () => {
