@@ -9,7 +9,11 @@ const Project = ({ name, image, alt, url, source, visible }) => {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader title={name} />
-      <CardMedia component="img" image={image} alt={alt} />
+      <CardMedia
+        component="img" //height="194"
+        image={image}
+        alt={alt}
+      />
       <CardContent style={{ textAlign: "center" }}>
         <Link
           underline="none"
