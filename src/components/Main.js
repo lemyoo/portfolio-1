@@ -14,7 +14,7 @@ function Main() {
   return (
     <Div>
       <NavBar />
-      <Grid container>
+      <Grid container style={{ paddingTop: "90px" }}>
         <Grid item sm={4} xs={12}>
           <MyImageAndName />
         </Grid>

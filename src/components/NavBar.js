@@ -24,6 +24,17 @@ import MenuIcon from "@mui/icons-material/Menu";
 }));*/
 
 const NavBar = () => {
+  const [color, setColor] = React.useState(false);
+
+  const changeColor = () => {
+    if (window.scrollY >= 200) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeColor);
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -33,7 +44,7 @@ const NavBar = () => {
     setAnchorElNav(null);
   };
   return (
-    <AppBar position="sticky" style={{ backgroundColor: "transparent" }}>
+    <AppBar position="fixed" style={{ backgroundColor: color ? null : "transparent" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
