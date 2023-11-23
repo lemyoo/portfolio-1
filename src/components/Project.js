@@ -14,13 +14,27 @@ const Project = ({ name, image, alt, url, source }) => {
         <Link
           underline="none"
           href={source}
-          style={{ backgroundColor: "green", padding: 5, borderRadius: 5, marginRight: "20px" }}>
+          style={{
+            backgroundColor: "#4caf50",
+            padding: 5,
+            borderRadius: 5,
+            marginRight: "20px",
+            color: "white",
+            boxShadow: "10px 10px 5px 0px rgba(0,0,0,0.75)",
+          }}>
           Source Code
         </Link>
         <Link
           underline="none"
           href={url}
-          style={{ backgroundColor: "red", padding: 5, borderRadius: 5, marginLeft: "10px" }}>
+          style={{
+            backgroundColor: "#f50057",
+            padding: 5,
+            borderRadius: 5,
+            marginLeft: "10px",
+            color: "white",
+            boxShadow: "10px 10px 5px 0px rgba(0,0,0,0.75)",
+          }}>
           Check it out
         </Link>
       </CardContent>
