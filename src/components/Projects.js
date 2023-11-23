@@ -5,6 +5,8 @@ import DashboardImage from "../projectsImages/DashBoard.PNG";
 import MovieRanking from "../projectsImages/MovieRanking.PNG";
 import BirthdayInvite from "../projectsImages/BirthdayInvite.PNG";
 import PasswordValidtor from "../projectsImages/PasswordValidator.PNG";
+import ConatctsDotNetMAUI from "../projectsImages/ContactsDotNet.PNG";
+import SlightlyTechieBackEnd from "../projectsImages/web-api-access.png";
 
 const Div = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.primary.main,
@@ -18,6 +20,7 @@ const projects = [
     alt: "dashboard",
     source: "https://github.com/lemyoo/Dashboard",
     url: "https://lemyodashboard.netlify.app/",
+    visible: true,
   },
   {
     name: "Password Validator",
@@ -25,6 +28,23 @@ const projects = [
     alt: "passwordvalidator",
     source: "https://github.com/lemyoo/password_validator",
     url: "https://passwordvalidator.netlify.app/",
+    visible: true,
+  },
+  {
+    name: "Contacts DotNet MAUI",
+    image: ConatctsDotNetMAUI,
+    alt: "contactsdotnetmaui",
+    source: "https://github.com/lemyoo/Contacts-With-DotNetMAUI",
+
+    visible: false,
+  },
+  {
+    name: "IN MEMORY BLOG WEBAPI",
+    image: SlightlyTechieBackEnd,
+    alt: "In memory blog webapi",
+    source: "https://github.com/lemyoo/SlightlyTechieBackEnd",
+
+    visible: false,
   },
   {
     name: "Movie Ranking",
@@ -32,6 +52,7 @@ const projects = [
     alt: "movieranking",
     source: "https://github.com/lemyoo/movieranking",
     url: "https://lemyoo.github.io/movieranking/",
+    visible: true,
   },
   {
     name: "Birthday Invite",
@@ -39,6 +60,7 @@ const projects = [
     alt: "birthdayinvite",
     source: "https://github.com/lemyoo/birthdayinvite",
     url: "https://lemyoo.github.io/birthdayinvite/",
+    visible: true,
   },
 ];
 const Projects = () => {
@@ -66,6 +88,7 @@ const Projects = () => {
                 alt={project.alt}
                 source={project.source}
                 url={project.url}
+                visible={project.visible}
               />
             </Grid>
           );
