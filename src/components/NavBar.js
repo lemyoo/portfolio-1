@@ -25,6 +25,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 const NavBar = () => {
   const [color, setColor] = React.useState(false);
+  const [highlight, setHighLight] = React.useState("HOME");
 
   const changeColor = () => {
     if (window.scrollY >= 200) {
@@ -33,8 +34,19 @@ const NavBar = () => {
       setColor(false);
     }
   };
+  const changeHighlight = () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 330 && window.scrollY < 980) {
+      setHighLight("SERVICES");
+    } else if (window.scrollY >= 983) {
+      setHighLight("PROJECTS");
+    } /*else if (window.scrollY >= ) {
+      setHighLight("CONTACTS");
+    }*/
+  };
 
   window.addEventListener("scroll", changeColor);
+  window.addEventListener("scroll", changeHighlight);
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -141,17 +153,32 @@ const NavBar = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, textAlign: "center" }}>
             <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
-              <Link href="#" color="inherit" underline="none" rel="noopener">
+              <Link
+                href="#"
+                color="inherit"
+                underline="none"
+                rel="noopener"
+                fontWeight={highlight === "HOME" ? "bold" : null}>
                 Home
               </Link>
             </Button>
             <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
-              <Link href="#services" color="inherit" underline="none" rel="noopener">
+              <Link
+                href="#services"
+                color="inherit"
+                underline="none"
+                rel="noopener"
+                fontWeight={highlight === "SERVICES" ? "bold" : null}>
                 Services
               </Link>
             </Button>
             <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
-              <Link href="#projects" color="inherit" underline="none" rel="noopener">
+              <Link
+                href="#projects"
+                color="inherit"
+                underline="none"
+                rel="noopener"
+                fontWeight={highlight === "PROJECTS" ? "bold" : null}>
                 Projects
               </Link>
             </Button>

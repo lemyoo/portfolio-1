@@ -9,8 +9,12 @@ import { SnackbarProvider } from "notistack";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#282c34",
-      contrastText: "#fff",
+      main: "#EEEEE9",
+      contrastText: "#000",
+    },
+    secondary: {
+      main: "#e9eaee",
+      contrastText: "#000",
     },
   },
   typography: {},

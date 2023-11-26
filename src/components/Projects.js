@@ -5,7 +5,7 @@ import DashboardImage from "../projectsImages/DashBoard.PNG";
 import MovieRanking from "../projectsImages/MovieRanking.PNG";
 import BirthdayInvite from "../projectsImages/BirthdayInvite.PNG";
 import PasswordValidtor from "../projectsImages/PasswordValidator.PNG";
-import ConatctsDotNetMAUI from "../projectsImages/ContactsDotNet.PNG";
+//import ConatctsDotNetMAUI from "../projectsImages/ContactsDotNet.PNG";
 import SlightlyTechieBackEnd from "../projectsImages/web-api-access.png";
 
 const Div = styled("div")(({ theme }) => ({
@@ -30,14 +30,14 @@ const projects = [
     url: "https://passwordvalidator.netlify.app/",
     visible: true,
   },
-  {
+  /*{
     name: "Contacts DotNet MAUI",
     image: ConatctsDotNetMAUI,
     alt: "contactsdotnetmaui",
     source: "https://github.com/lemyoo/Contacts-With-DotNetMAUI",
 
     visible: false,
-  },
+  },*/
   {
     name: "IN MEMORY BLOG WEBAPI",
     image: SlightlyTechieBackEnd,
@@ -69,6 +69,7 @@ const Projects = () => {
       <Typography
         variant="h5"
         textAlign={"left"}
+        fontWeight={"bold"}
         sx={{
           textDecoration: "overline",
           paddingBottom: "10px",

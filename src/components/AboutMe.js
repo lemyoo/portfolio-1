@@ -6,6 +6,7 @@ const AboutMe = () => {
       <Typography
         variant="h5"
         textAlign={"left"}
+        fontWeight={"bold"}
         sx={{ textDecoration: "overline", paddingBottom: "10px", paddingTop: "20px" }}
         md={{ textDecoration: "underline", paddingBottom: "30px" }}>
         About Me

@@ -17,6 +17,7 @@ const ContactMe = () => {
       <Typography
         variant="h5"
         textAlign={"left"}
+        fontWeight={"bold"}
         sx={{
           textDecoration: "overline",
           paddingBottom: "10px",
