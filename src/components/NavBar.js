@@ -155,7 +155,7 @@ const NavBar = () => {
             <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
               <Link
                 href="#"
-                color="inherit"
+                color="primary.contrastText"
                 underline="none"
                 rel="noopener"
                 fontWeight={highlight === "HOME" ? "bold" : null}>
@@ -165,7 +165,7 @@ const NavBar = () => {
             <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
               <Link
                 href="#services"
-                color="inherit"
+                color="primary.contrastText"
                 underline="none"
                 rel="noopener"
                 fontWeight={highlight === "SERVICES" ? "bold" : null}>
@@ -175,7 +175,7 @@ const NavBar = () => {
             <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
               <Link
                 href="#projects"
-                color="inherit"
+                color="primary.contrastText"
                 underline="none"
                 rel="noopener"
                 fontWeight={highlight === "PROJECTS" ? "bold" : null}>
@@ -183,7 +183,7 @@ const NavBar = () => {
               </Link>
             </Button>
             <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
-              <Link href="#contactme" color="inherit" underline="none" rel="noopener">
+              <Link href="#contactme" color="primary.contrastText" underline="none" rel="noopener">
                 Contact
               </Link>
             </Button>
