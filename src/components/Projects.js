@@ -7,6 +7,7 @@ import BirthdayInvite from "../projectsImages/BirthdayInvite.PNG";
 import PasswordValidtor from "../projectsImages/PasswordValidator.PNG";
 //import ConatctsDotNetMAUI from "../projectsImages/ContactsDotNet.PNG";
 import SlightlyTechieBackEnd from "../projectsImages/web-api-access.png";
+import SchoolBillCalculator from "../projectsImages/SchoolBillCalculator.png";
 
 const Div = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.primary.main,
@@ -30,14 +31,14 @@ const projects = [
     url: "https://passwordvalidator.netlify.app/",
     visible: true,
   },
-  /*{
-    name: "Contacts DotNet MAUI",
-    image: ConatctsDotNetMAUI,
-    alt: "contactsdotnetmaui",
-    source: "https://github.com/lemyoo/Contacts-With-DotNetMAUI",
-
-    visible: false,
-  },*/
+  {
+    name: "School Bill Calculator",
+    image: SchoolBillCalculator,
+    alt: "schoolbillcalculator",
+    source: "https://github.com/lemyoo/schoolfeescalculator",
+    url: "https://schoolbillcalculator.netlify.app/",
+    visible: true,
+  },
   {
     name: "IN MEMORY BLOG WEBAPI",
     image: SlightlyTechieBackEnd,
