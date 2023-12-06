@@ -90,7 +90,7 @@ const ContactMe = () => {
                 />
               </Grid>
 
-              <Grid item sm={4} xs={10} style={{ margin: "auto", paddingBottom: "10px" }}>
+              <Grid item md={4} sm={4} xs={10} style={{ margin: "auto", paddingBottom: "10px" }}>
                 <TextField
                   label="Your Mobile Number"
                   variant="outlined"
