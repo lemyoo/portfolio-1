@@ -1,6 +1,6 @@
 import "./App.css";
 import Main from "./components/Main";
-import Services from "./components/Services";
+//import Services from "./components/Services";
 import Projects from "./components/Projects";
 import ContactMe from "./components/ContactMe";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
@@ -24,7 +24,7 @@ const App = () => {
     <SnackbarProvider>
       <ThemeProvider theme={theme}>
         <Main />
-        <Services />
+        {/*<Services />*/}
         <Projects />
         <ContactMe />
         <div>

@@ -107,11 +107,11 @@ const NavBar = () => {
                   Home
                 </Link>
               </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
+              {/*<MenuItem onClick={handleCloseNavMenu}>
                 <Link href="#services" color="inherit" underline="none" rel="noopener">
                   Services
                 </Link>
-              </MenuItem>
+              </MenuItem>*/}
               <MenuItem onClick={handleCloseNavMenu}>
                 <Link href="#projects" color="inherit" underline="none" rel="noopener">
                   Projects
@@ -162,7 +162,7 @@ const NavBar = () => {
                 Home
               </Link>
             </Button>
-            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
+            {/*<Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
               <Link
                 href="#services"
                 color="primary.contrastText"
@@ -171,7 +171,7 @@ const NavBar = () => {
                 fontWeight={highlight === "SERVICES" ? "bold" : null}>
                 Services
               </Link>
-            </Button>
+            </Button>*/}
             <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
               <Link
                 href="#projects"
