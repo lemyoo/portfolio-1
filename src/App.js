@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import ContactMe from "./components/ContactMe";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { SnackbarProvider } from "notistack";
+import OnGoingProjects from "./components/OnGoingProjects";
 
 const theme = createTheme({
   palette: {
@@ -26,6 +27,7 @@ const App = () => {
         <Main />
         {/*<Services />*/}
         <Projects />
+        <OnGoingProjects />
         <ContactMe />
         <div>
           <a href="https://iconscout.com/icons/dotnet" target="_blank" rel="noopener noreferrer">
