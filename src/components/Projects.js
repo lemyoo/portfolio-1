@@ -21,7 +21,7 @@ const projects = [
     image: WeatherAppImage,
     alt: "weather app",
     source: "https://github.com/lemyoo/weatherapp",
-    url: "https://https://eml-weatherapp.netlify.app/",
+    url: "https://eml-weatherapp.netlify.app/",
     visible: true,
   },
   {
