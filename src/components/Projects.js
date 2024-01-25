@@ -5,6 +5,7 @@ import DashboardImage from "../projectsImages/DashBoard.PNG";
 import MovieRanking from "../projectsImages/MovieRanking.PNG";
 import BirthdayInvite from "../projectsImages/BirthdayInvite.PNG";
 import PasswordValidtor from "../projectsImages/PasswordValidator.PNG";
+import WeatherAppImage from "../projectsImages/weatherApp.PNG";
 //import ConatctsDotNetMAUI from "../projectsImages/ContactsDotNet.PNG";
 import SlightlyTechieBackEnd from "../projectsImages/web-api-access.png";
 import SchoolBillCalculator from "../projectsImages/SchoolBillCalculator.png";
@@ -16,11 +17,11 @@ const Div = styled("div")(({ theme }) => ({
 
 const projects = [
   {
-    name: "Dashboard",
-    image: DashboardImage,
-    alt: "dashboard",
-    source: "https://github.com/lemyoo/Dashboard",
-    url: "https://lemyodashboard.netlify.app/",
+    name: "Weather App",
+    image: WeatherAppImage,
+    alt: "weather app",
+    source: "https://github.com/lemyoo/weatherapp",
+    url: "https://https://eml-weatherapp.netlify.app/",
     visible: true,
   },
   {
@@ -29,6 +30,14 @@ const projects = [
     alt: "passwordvalidator",
     source: "https://github.com/lemyoo/password_validator",
     url: "https://passwordvalidator.netlify.app/",
+    visible: true,
+  },
+  {
+    name: "Dashboard",
+    image: DashboardImage,
+    alt: "dashboard",
+    source: "https://github.com/lemyoo/Dashboard",
+    url: "https://lemyodashboard.netlify.app/",
     visible: true,
   },
   {
